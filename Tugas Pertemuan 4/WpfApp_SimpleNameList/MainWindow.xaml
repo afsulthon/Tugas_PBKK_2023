@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp_SimpleNameList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_SimpleNameList"
+        mc:Ignorable="d"
+        Title="Simple Name List App" Height="360" Width="300" Background="LightGray">
+    <Grid>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" FontSize="16" Foreground="Black" HorizontalAlignment="Center">Names</Label>
+            <Label Grid.Column="1" FontSize="16" Foreground="Black" HorizontalAlignment="Center">Type here...</Label>
+            <ListBox Grid.Row="1" x:Name="lstNames" SelectionMode="Extended" Background="White"/>
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
+                <TextBox x:Name="txtName" FontSize="14" Background="#FFFFFF" Margin="0,0,0,5"/>
+                <Button x:Name="btnAdd" Content="Add" FontSize="14" Background="#4CAF50" Foreground="White" Margin="0,0,0,5" Click="ButtonAdd_Click"/>
+                <Button x:Name="btnRemove" Content="Remove" FontSize="14" Background="#F44336" Foreground="White" Margin="0,0,0,5" Click="ButtonRemove_Click"/>
+                <Button x:Name="btnUndo" Content="Undo" FontSize="14" Background="#2196F3" Foreground="White" Click="ButtonUndo_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
