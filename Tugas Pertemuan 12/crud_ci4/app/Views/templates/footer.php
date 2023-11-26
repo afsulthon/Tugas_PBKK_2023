@@ -11,7 +11,7 @@
                 cancelButtonText: 'Kembali'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href = '<?= base_url('hapus / '); ?>' + id;
+                    window.location.href = '<?= base_url('hapus/'); ?>' + id;
                 }
             });
         }

@@ -1,11 +1,11 @@
-CREATE DATABASE IF NOT EXISTS `crud-ci4` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `crud-ci4`;
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-CREATE TABLE `karyawan` (
+CREATE DATABASE IF NOT EXISTS `crud_ci4` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `crud_ci4`;
+
+CREATE TABLE IF NOT EXISTS `karyawan` (
   `id` int(11) PRIMARY KEY NOT NULL,
   `nama` varchar(100) NOT NULL,
   `no_telp` varchar(15) NOT NULL,
@@ -23,4 +23,5 @@ INSERT INTO `karyawan` (`id`, `nama`, `no_telp`, `tgl_lahir`, `golongan`) VALUES
 
 ALTER TABLE `karyawan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 COMMIT;

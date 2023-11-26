@@ -38,6 +38,11 @@
                 </td>
               </tr>
             <?php endforeach; ?>
+            <?php if (count($karyawan) == 0) : ?>
+              <tr>
+                <td colspan="6" class="text-center">Data karyawan tidak ditemukan</td>
+              </tr>
+            <?php endif; ?>
           </tbody>
         </table>
       </div>
