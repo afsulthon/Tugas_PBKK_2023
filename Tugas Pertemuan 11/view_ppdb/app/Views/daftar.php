@@ -7,23 +7,7 @@
   <title>PPDB Online SMA Informatika 2023</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/82d0e7f3eb.js" crossorigin="anonymous"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-
-    .navbar-brand,
-    .card-title {
-      font-weight: 700;
-    }
-
-    .form-label {
-      font-weight: 600;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="<?= base_url('style.css') ?>">
 </head>
 
 <body>
@@ -112,6 +96,8 @@
       </div>
     </div>
   </main>
+
+  <script src="https://kit.fontawesome.com/82d0e7f3eb.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
